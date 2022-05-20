@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Example</title>
+    <style type="text/css">
+        table{
+            width: 600px;
+            border: yellowgreen 5px solid;
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin: 0 auto 0 auto;
+        /*    это значения выравнивания таблицы*/
+        }
+        /*название таблицы*/
+        caption{
+            text-align: left;
+            font-size: x-large;
+            font-style: normal;
+            font-family: Verdana;
+            caption-side: top;
+        }
+        td, th{
+            border: black 1px solid;
+            padding: 10px;
+            text-align: center;
+        }
+        tr{
+            text-align: center;
+            vertical-align: center;
+        }
+        tr:nth-child(2n){
+            background: #e8e8e8
+        }
+        thead, tfoot{
+            /*стиль заголовков столбцов*/
+            background: aqua;
+        }
+    </style>
+</head>
+<body style="background: chartreuse">
+ <table>
+     <caption>
+         Таблица:&nbsp;&quot;Персонал&nbsp;НИЛ-6&quot;</caption>
+     <thead>
+<!--     Наименование столбцов-->
+     <tr>
+         <th>Табель</th>
+         <th>ФИО</th>
+         <th>Оклад</th>
+         <th>Должность</th>
+         <th>Надбавка</th>
+         <th>Телефон</th>
+         <th>Адрес</th>
+     </tr>
+     </thead>
+     <tbody>
+     <tr style="background: yellow">
+<!--         Это строка через все столцы-->
+         <td>
+             56001
+         </td>
+         <td>
+             Андреев&nbsp;В.В.
+         </td>
+         <td>
+             11000
+         </td>
+         <td>
+             Ведущий&nbsp;инженер&nbsp;-&nbsp;исследователь
+         </td>
+         <td>
+             10%
+         </td>
+         <td>
+             095-613-17-49
+         </td>
+         <td>
+             ул.&nbsp;Плетенная&nbsp;45,&nbsp;кв.&nbsp;15
+         </td>
+     </tr>
+      <tr>
+         <td>81658</td>
+         <td>Савушкин&nbsp;В.В.</td>
+         <td>20000</td>
+         <td>Начальник&nbsp;лаборатории</td>
+         <td>35%</td>
+         <td>066-71-90-765</td>
+         <td>пр.&nbsp;Центральный&nbsp;48,&nbsp;кв.&nbsp;78</td>
+     </tr>
+     <tr style="background: blueviolet">
+         <td>56136</td><td>Филимоненко&nbsp;Н.В.</td><td>12000</td>
+         <td>Инженер&nbsp;-&nbsp;исследователь&nbsp;I&nbsp;кат.</td>
+         <td>15%</td><td>068-48-91-485</td>
+         <td>пр.&nbsp;Центральный&nbsp;137,&nbsp;кв.&nbsp;75</td>
+     </tr>
+     </tbody>
+     <tfoot>
+     <tr>
+<!--         объединили 7 колонок в низу таблицы с пустым значением-->
+         <td colspan="7">&nbsp;</td>
+     </tr>
+     </tfoot>
+ </table>
+</body>
+</html>
